@@ -1,0 +1,29 @@
+<section class="planning-section">
+    <div class="container">
+        <div class="planning">
+            <div class="planning-details">
+                <div class="planning-scss">
+                    <div class="planning-badge">
+                        <app-badges badges="planning"></app-badges>
+                    </div>
+                    <div class="planning-head">
+                        <h3>
+                            Our Planning Lorem Dummy Text
+                        </h3>
+                    </div>
+                    <p class="planning-para">
+                        EastBourne is a private investment firm focused on Private Equity and Special Situations.
+                    </p>
+                </div>
+                <div class="planning-btn">
+                    <app-buttons eastbourne="get in touch with us"></app-buttons>
+                </div>
+            </div>
+            <div class="planning-cards">
+                <div *ngFor="let cards of cardsdata" class="planning-content">
+                    <app-cards [cards]="cards?.info"></app-cards>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

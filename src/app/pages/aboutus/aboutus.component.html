@@ -1,0 +1,48 @@
+<section class='aboutus'>
+    <div class='container'>
+        <div class='experties-aboutus'>
+            <span class='experties-span'>
+                <app-badges badges='experties'></app-badges>
+            </span>
+            <h3 class='experties-head'>
+                Expertise across<br /> markets, industries and the globe.
+            </h3>
+        </div>
+        <div class='aboutus-menu'>
+            <ul class='about-menu'>
+                <li class='menu-style'>
+                    <a href='/' class='about-menu-list-bold'>
+                        All
+                    </a>
+                </li>
+                <li class='menu-style'>
+                    <a href='/' class='about-menu-list'>
+                        Debt
+                    </a>
+                </li>
+                <li class='menu-style'>
+                    <a href='/' class='about-menu-list'>
+                        Private Equity
+                    </a>
+                </li>
+                <li class='menu-style'>
+                    <a href='/' class='about-menu-list'>
+                        Current Holdings
+                    </a>
+                </li>
+                <li class='menu-style'>
+                    <a href='/' class='about-menu-list'>
+                        Historic Holdings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class='aboutus-card'>
+            <div class="aboutus-card-brands">
+                <div *ngFor="let cards of aboutusdata" class="col-md-4">
+                    <app-expertiescards [expertiescards]="cards"></app-expertiescards>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

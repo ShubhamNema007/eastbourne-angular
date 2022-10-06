@@ -1,0 +1,32 @@
+<section class='experties-section'>
+    <div class='container'>
+        <div class='experties'>
+            <span class='experties-span'>
+                <app-badges badges="experties"></app-badges>
+            </span>
+            <h3 class='experties-head'>
+                Expertise across<br /> markets, industries and the globe.
+            </h3>
+        </div>
+        <div class="row">
+            <div *ngFor="let cards of expertiescardsdata" class="col-md-4">
+                <app-expertiescards [expertiescards]="cards"></app-expertiescards>
+            </div>
+            <div class='col-md-8'>
+                <div class="experties-image">
+                    <img src="../../../assets/images/Card-section-image.svg" class="card-section-image"
+                        alt="card-section" />
+                    <div class="experties-content">
+                        <h3 class="card-head">
+                            Innovative strategies.
+                            Engaged investing.
+                        </h3>
+                        <div class="card-btn">
+                            <app-buttons eastbourne="get in touch with us"></app-buttons>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
